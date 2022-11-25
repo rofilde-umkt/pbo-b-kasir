@@ -8,6 +8,13 @@ public class Pelanggan {
     public Pelanggan(int n) {
         this.nomorMeja = n;
     }
+
+    public Makanan[] pesan(Makanan[] m) {
+        this.makanan = m;
+        this.nomorPesanan = m.length;
+
+        return this.makanan;
+    }
     
 
     public Makanan[] pesan(Makanan m) {
