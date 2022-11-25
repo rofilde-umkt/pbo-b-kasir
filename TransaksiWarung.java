@@ -12,8 +12,8 @@ public class TransaksiWarung {
         Pelanggan udin = new Pelanggan(12);
         Kasir siti = new Kasir();
 
-        udin.pesan(coto);
-        udin.pesan(bakso);
+        udin.pesan(soto, 5);
+       
         double totalHarga = siti.totalPesanan(udin);
         double kembalian = udin.bayar(totalHarga, 200000);
         System.out.println("Total Pesanan Udin " + totalHarga);

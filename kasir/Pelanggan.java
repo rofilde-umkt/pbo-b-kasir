@@ -15,6 +15,13 @@ public class Pelanggan {
 
         return this.makanan;
     }
+
+    public void pesan(Makanan m, int jumlah) {
+        for(int i=1; i <= jumlah; i++) {
+            this.pesan(m);
+        }
+    
+    }
     
 
     public Makanan[] pesan(Makanan m) {
